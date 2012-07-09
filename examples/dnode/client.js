@@ -8,9 +8,7 @@ var server = dnode();
 server.on("remote", function(remote) {
     remote.greeting("World", function(error, value) {
         console.log(value);
-    });
-    remote.greeting("World", function(error, value) {
-        console.log(value);
+        server.end();
     });
 });
 
