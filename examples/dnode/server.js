@@ -3,7 +3,7 @@ var dnode = require("dnode");
 var ipc_stream = require("../../lib");
 
 var client = child_process.fork("./client.js");
-var clientStream = ipc_stream.getStreamToChild(client);
+var clientStream = new ipc_stream(client);
 
 var server = dnode({
     greeting: function(target, next) {

@@ -3,7 +3,7 @@ var ipc_stream = require("../../lib");
 
 console.log("in worker");
 
-var parentStream = ipc_stream.getStreamToParent();
+var parentStream = new ipc_stream(process);
 
 parentStream.pipe(process.stdout);
 parentStream.pipe(parentStream);

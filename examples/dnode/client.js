@@ -2,7 +2,7 @@ var child_process = require("child_process");
 var dnode = require("dnode");
 var ipc_stream = require("../../lib");
 
-var parentStream = ipc_stream.getStreamToParent();
+var parentStream = new ipc_stream(process);
 
 var server = dnode();
 server.on("remote", function(remote) {
