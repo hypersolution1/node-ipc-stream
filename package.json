@@ -1,13 +1,13 @@
 {
     "name": "ipc-stream",
     "version": "0.1.0",
-    "description": "A stream wrapper around IPC channels from forked instances"
+    "description": "A stream wrapper around IPC channels from forked instances",
     "main": "./index.js",
     "keywords": ["ipc", "stream"],
     "repository": {
         "type": "git",
         "url": "http://github.com/josephmoniz/node-ipc-stream.git"
-    }
+    },
     "dependencies": {
         "UnderscoreKit": ">=0.1.1"
     },
