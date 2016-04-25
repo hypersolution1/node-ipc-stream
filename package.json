@@ -9,7 +9,6 @@
         "url": "http://github.com/josephmoniz/node-ipc-stream.git"
     },
     "dependencies": {
-        "UnderscoreKit": ">=0.1.1"
     },
     "engine": {
         "node": ">=0.6.0"
